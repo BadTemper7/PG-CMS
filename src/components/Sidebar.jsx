@@ -1,5 +1,5 @@
-import React from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import React from "react"
+import { NavLink, useNavigate } from "react-router-dom"
 import {
   FaImage,
   FaBell,
@@ -7,16 +7,16 @@ import {
   FaCog,
   FaSignOutAlt,
   FaBars,
-} from "react-icons/fa";
-import { MdDashboard } from "react-icons/md";
+} from "react-icons/fa"
+import { MdDashboard } from "react-icons/md"
 
 function Sidebar({ isOpen, toggleSidebar }) {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   // 👉 LOGOUT (no backend, redirect only)
   const handleLogout = () => {
-    navigate("/login");
-  };
+    navigate("/login")
+  }
 
   // Menu items
   const allMenuItems = [
@@ -50,10 +50,10 @@ function Sidebar({ isOpen, toggleSidebar }) {
       href: "/customization",
       order: 5,
     },
-  ];
+  ]
 
   // Desktop order
-  const desktopMenuItems = [...allMenuItems].sort((a, b) => a.order - b.order);
+  const desktopMenuItems = [...allMenuItems].sort((a, b) => a.order - b.order)
 
   // Mobile centered Dashboard
   const mobileMenuItems = [
@@ -62,7 +62,7 @@ function Sidebar({ isOpen, toggleSidebar }) {
     allMenuItems.find((item) => item.order === 1),
     allMenuItems.find((item) => item.order === 4),
     allMenuItems.find((item) => item.order === 5),
-  ];
+  ]
 
   return (
     <>
@@ -93,7 +93,9 @@ function Sidebar({ isOpen, toggleSidebar }) {
                 <h1 className="text-white font-bold text-5xl tracking-widest mb-2">
                   CMS
                 </h1>
-                <p className="text-sm text-white">Content Management System</p>
+                <p className="text-sm text-white text-nowrap">
+                  Content Management System
+                </p>
               </>
             ) : (
               <h1 className="font-bold text-3xl tracking-widest text-white">
@@ -159,7 +161,7 @@ function Sidebar({ isOpen, toggleSidebar }) {
         ))}
       </nav>
     </>
-  );
+  )
 }
 
-export default Sidebar;
+export default Sidebar
