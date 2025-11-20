@@ -93,7 +93,7 @@ function Sidebar({ isOpen, toggleSidebar }) {
                 <h1 className="text-white font-bold text-5xl tracking-widest mb-2">
                   CMS
                 </h1>
-                <p className="text-sm text-white text-nowrap">
+                <p className="text-sm text-white text-nowrap overflow-hidden">
                   Content Management System
                 </p>
               </>

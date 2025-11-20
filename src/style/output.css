@@ -977,7 +977,9 @@ video {
 .justify-around {
   justify-content: space-around;
 }
-
+.text-nowrap {
+  text-wrap: nowrap;
+}
 .gap-2 {
   gap: 0.5rem;
 }
