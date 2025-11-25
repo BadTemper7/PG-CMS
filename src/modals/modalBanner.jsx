@@ -330,7 +330,7 @@ const ModalBanner = ({
                   </p>
                 </div>
               ) : (
-                <div>
+                <div className="flex flex-col items-center justify-center">
                   <FiUploadCloud className="text-4xl text-gray-400 mb-2" />
                   <p className="text-gray-600 text-sm">
                     Choose a file or drag & drop it here
